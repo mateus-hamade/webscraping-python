@@ -9,7 +9,7 @@ venv/Scripts/activate
 ```
 - Executando o código
 ```
-src/webScraping.py
+python src/webScraping.py
 ```
 ### Bibliotecas 📚
 - Selenium ✅
