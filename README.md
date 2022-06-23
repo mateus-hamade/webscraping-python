@@ -5,8 +5,10 @@
 ### Executando o código
 - Ativando o ambiente virtual ⚙️
 ```
-venv/Scripts/activate
+.venv/Scripts/activate
 ```
+❗Caso o PowerShell bloqueie a execução do Script, tente executar via Bash.
+
 - Executando o código 🚀
 ```
 python src/webScraping.py
