@@ -1,3 +1,4 @@
+from os import mkdir
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -26,7 +27,11 @@ def main():
     listaEspera, df = dataProcessing(htmlContent)
 
     # Cria os arquivos
-    createFiles(listaEspera, df)
+    try:
+        mkdir('data')
+        createFiles(listaEspera, df)
+    except FileExistsError:
+        createFiles(listaEspera, df)
 
     # Fecha o navegador
     driver.quit()
