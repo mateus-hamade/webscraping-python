@@ -7,7 +7,6 @@
 - Criando o ambiente virtual⚙️
 ```
 >> python -m venv venv
-
 >> venv/scripts/activate
 ```
 
